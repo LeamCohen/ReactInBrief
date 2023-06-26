@@ -2,7 +2,7 @@ import React from 'react'
 
 function Nav(props) {
     const navStyle = {
-        background : 'light-gray',
+        backgroundColor : 'light-gray',
     }
     return ( 
         <nav 
