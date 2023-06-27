@@ -2,7 +2,7 @@ import React from 'react';
 import Nav from './Nav';
 import UserInteractor from './UserInteractor';
 
-function Header() {
+function Header(props) {
   const headerStyle = {
     backgroundColor: 'gray',
     margin:'0',
@@ -19,7 +19,8 @@ function Header() {
         style={headerStyle}
         className="Header">
         <img src="" alt="" />
-        <Nav first='Home' second='About' third='Profile'/>
+        <h1>{props.logStatus}</h1>
+        <Nav/>
         <UserInteractor/>
       </div>
     );

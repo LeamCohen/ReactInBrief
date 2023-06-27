@@ -1,19 +1,14 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom'; 
 
 function Nav(props) {
     const navStyle = {
         backgroundColor : 'light-gray',
     }
     return ( 
-        <nav 
-            style={navStyle}
-            className='main-nav'
-            >
-            <ul>
-                <li>{props.first}</li>
-                <li>{props.second}</li>
-                <li>{props.third}</li>
-            </ul>
+        <nav>
+            <Link to='/'>Home</Link>
+            <Link to='/about'>About</Link>
         </nav>
     );
 }

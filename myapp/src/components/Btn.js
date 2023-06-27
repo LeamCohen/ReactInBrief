@@ -1,17 +1,19 @@
 import React from 'react'
-/*
-function Btn() {
-    const clickHandler = () => console.log('clicked');
+
+function Btn(props) {
+    /*
+    function clickHandler(){
+        return props.mode = !props.mode;
+    }*/ //onClick={clickHandler} in butn element
     return ( 
         <>
-            <button onClick={clickHandler}>
+            <button>
                 Click me
             </button>
         </>
-     );
+     )
 }
-*/
-
+/*
 function Btn() {
     const clickHandler = () => console.log('Over');
     return ( 
@@ -22,5 +24,6 @@ function Btn() {
         </>
      );
 }
+*/
 
 export default Btn;
